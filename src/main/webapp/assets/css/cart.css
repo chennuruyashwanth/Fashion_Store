@@ -1,0 +1,187 @@
+/* =========================
+CART PAGE
+========================= */
+
+.cart-container{
+width:90%;
+max-width:1200px;
+margin:40px auto;
+padding:20px;
+}
+
+.cart-container h1{
+text-align:center;
+margin-bottom:30px;
+color:#222;
+}
+
+/* =========================
+CART TABLE
+========================= */
+
+.cart-table{
+width:100%;
+border-collapse:collapse;
+background:#fff;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.cart-table th{
+background:#111827;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+.cart-table td{
+padding:15px;
+text-align:center;
+border-bottom:1px solid #e5e7eb;
+}
+
+.cart-table tr:hover
+
+.cart-table img{
+width:80px;
+height:80px;
+object-fit:cover;
+border-radius:8px;
+}
+
+/* =========================
+QUANTITY INPUT
+========================= */
+
+.cart-table input[type="number"]{
+width:70px;
+padding:8px;
+text-align:center;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+/* =========================
+BUTTONS
+========================= */
+
+.cart-table button{
+background:#2563eb;
+color:white;
+border:none;
+padding:8px 14px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.cart-table button:hover
+
+.cart-table a{
+text-decoration:none;
+font-weight:600;
+}
+
+.cart-table a:hover{
+opacity:0.8;
+}
+
+/* =========================
+REMOVE BUTTON
+========================= */
+
+.cart-table a{
+color:#dc2626;
+}
+
+/* =========================
+CART SUMMARY
+========================= */
+
+.cart-summary{
+margin-top:30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.cart-summary h2{
+color:#111827;
+}
+
+/* =========================
+CLEAR CART BUTTON
+========================= */
+
+.clear-btn{
+background:#ef4444;
+color:white;
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.clear-btn:hover
+
+/* =========================
+CHECKOUT BUTTON
+========================= */
+
+.checkout-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#000;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.checkout-btn:hover{
+    background:#ffffff;
+}
+
+/* =========================
+EMPTY CART
+========================= */
+
+.cart-container h2{
+text-align:center;
+margin-top:40px;
+color:#555;
+}
+
+.cart-container a{
+display:inline-block;
+margin-top:20px;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.cart-table{
+    display:block;
+    overflow-x:auto;
+}
+
+.cart-summary{
+    flex-direction:column;
+    text-align:center;
+}
+
+.clear-btn,
+.checkout-btn{
+    width:100%;
+    text-align:center;
+}
+
+}

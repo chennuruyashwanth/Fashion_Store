@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Main Container */
+
+.confirmation-container{
+    max-width:1000px;
+    margin:40px auto;
+    padding:20px;
+}
+
+/* Card */
+
+.confirmation-card{
+    background:#ffffff;
+    border-radius:15px;
+    padding:40px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Success Section */
+
+.success-section{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.success-icon{
+    width:80px;
+    height:80px;
+    margin:auto;
+    background:#28a745;
+    color:white;
+    border-radius:50%;
+    font-size:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.success-section h1{
+    color:#28a745;
+    margin-bottom:10px;
+}
+
+.success-section p{
+    color:#666;
+}
+
+/* Order Details */
+
+.order-details{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-bottom:40px;
+}
+
+.detail-box{
+    background:#fafafa;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid #e0e0e0;
+}
+
+.detail-box h3{
+    color:#444;
+    margin-bottom:8px;
+}
+
+.detail-box p{
+    color:#111;
+    font-weight:600;
+}
+
+/* Ordered Products */
+
+.ordered-products h2{
+    margin-bottom:20px;
+    color:#333;
+}
+
+.product-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+.product-row:last-child{
+    border-bottom:none;
+}
+
+/* Total */
+
+.total-section{
+    margin-top:30px;
+    text-align:left;
+    font-size:24px;
+    font-weight:bold;
+    color:#c89b3c;
+}
+
+/* Button */
+
+.button-section{
+    text-align:center;
+    margin-top:40px;
+}
+
+.continue-btn{
+    text-decoration:none;
+    background:#c89b3c;
+    color:white;
+    padding:14px 30px;
+    border-radius:8px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.continue-btn:hover{
+    background:#b6892f;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .order-details{
+        grid-template-columns:1fr;
+    }
+
+    .product-row{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .total-section{
+        text-align:left;
+    }
+}

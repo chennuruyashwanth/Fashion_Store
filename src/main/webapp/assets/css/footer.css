@@ -1,0 +1,89 @@
+/* FOOTER */
+
+.footer{
+    background: #1F2937;
+    color: white;
+    margin-top: 60px;
+}
+
+/* Main Container */
+
+.footer-container{
+    max-width: 1300px;
+    margin: auto;
+
+    padding: 60px 40px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 40px;
+}
+
+/* Brand Section */
+
+.brand-section h3{
+    color: #D4A373;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.brand-section p{
+    color: #D1D5DB;
+    line-height: 1.8;
+}
+
+/* Titles */
+
+.footer-section h4{
+    color: #D4A373;
+    margin-bottom: 20px;
+    font-size: 18px;
+    position: relative;
+}
+
+.footer-section h4::after{
+    content: "";
+    display: block;
+
+    width: 40px;
+    height: 3px;
+
+    background: #D4A373;
+
+    margin-top: 8px;
+}
+
+/* Links */
+
+.footer-links{
+    list-style: none;
+}
+
+.footer-links li{
+    margin-bottom: 12px;
+}
+
+.footer-links a{
+    color: #D1D5DB;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+    color: #D4A373;
+    padding-left: 5px;
+}
+
+/* Bottom */
+
+.footer-bottom{
+    background: #111827;
+    text-align: center;
+    padding: 18px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom p{
+    color: #9CA3AF;
+    font-size: 14px;
+}

@@ -1,0 +1,111 @@
+/* NAVBAR */
+
+.navbar{
+    background: linear-gradient(135deg,#8B5E3C,#A47148);
+    padding: 18px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Logo */
+
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* Navigation Links */
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links li{
+    display: inline-block;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* Hover underline */
+
+.nav-links a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #FFD166;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after{
+    width: 100%;
+}
+
+.nav-links a:hover{
+    color: #FFD166;
+}
+
+/* Search Box */
+
+.search-box{
+    width: 280px;
+}
+
+.search-box input{
+    width: 100%;
+    padding: 10px 15px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.15);
+    color: white;
+
+    font-size: 14px;
+}
+
+.search-box input::placeholder{
+    color: rgba(255,255,255,0.8);
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search-box{
+        width: 100%;
+    }
+}

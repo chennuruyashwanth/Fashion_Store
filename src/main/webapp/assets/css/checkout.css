@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+     background:linear-gradient(
+        to right,
+        #F8F5F1,
+        #EFE7DF
+    );
+    min-height:100vh;
+    padding:30px;
+    color:white;
+}
+
+.checkout-page{
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+}
+
+.delivery-card{
+    flex:2;
+    background:#664f17;
+    padding:30px;
+    border-radius:20px;
+}
+
+.summary-card{
+    flex:1;
+    background:#664f17;
+    padding:25px;
+    border-radius:20px;
+    position:sticky;
+    top:20px;
+}
+
+h2{
+    margin-bottom:25px;
+    font-size:32px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    margin-top:15px;
+    font-weight:600;
+}
+
+input[type=text]{
+    width:100%;
+    padding:14px;
+    border:2px solid #5c5870;
+    background:#c1cbbc;
+    color:black;
+    border-radius:14px;
+    outline:none;
+}
+
+.row{
+    display:flex;
+    gap:20px;
+}
+
+.field{
+    flex:1;
+}
+
+.payment-option{
+    margin-top:15px;
+    padding:16px;
+    border:2px solid #5c5870;
+    color:black;
+    border-radius:14px;
+    background:#c1cbbc;
+}
+
+.place-order-btn{
+    width:100%;
+    margin-top:25px;
+    padding:16px;
+    border:none;
+    border-radius:14px;
+    background:#c9a97d;
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.place-order-btn:hover{
+    background:#d7b88c;
+}
+
+.product-item{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+    padding-bottom:15px;
+    border-bottom:1px solid #555;
+}
+
+.product-item h4{
+    margin-bottom:5px;
+}
+
+.total{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #555;
+    margin-top:15px;
+}
+.logo a{
+    text-decoration: none;
+    color: #664f17;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.logo1 a{
+    text-decoration: none;
+    color: #664f17;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
